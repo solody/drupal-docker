@@ -3,7 +3,7 @@ version: '3.1'
 services:
 
   drupal:
-    image: drupal:latest
+    image: edwinkent/drupal-docker:latest
     ports:
       - 8080:80
     volumes:
