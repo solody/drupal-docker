@@ -1,6 +1,8 @@
 FROM drupal:latest
 
-RUN apt-get update && docker-php-ext-install -j$(nproc) bcmath
+RUN apt-get update && apt-get install -y \
+            wget \
+             && docker-php-ext-install -j$(nproc) bcmath
 
 COPY install-composer.sh install-composer.sh
 
