@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
 
 COPY install-composer.sh install-composer.sh
 
-RUN chmod 0777 "./install-composer.sh" && "./install-composer.sh"
+RUN chmod 0777 "./install-composer.sh"
+RUN "./install-composer.sh"
 
 COPY composer.json composer.json
