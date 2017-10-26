@@ -1,8 +1,8 @@
 FROM drupal:latest
 
-RUN apt-get update && apt-get install -y \
-        libfreetype6-dev \
-        libjpeg62-turbo-dev \
-        libmcrypt-dev \
-        libpng-dev \
-    && docker-php-ext-install -j$(nproc) bcmath
+RUN apt-get update && docker-php-ext-install -j$(nproc) bcmath
+
+COPY install-composer.sh install-composer.sh
+RUN install-composer.sh
+
+COPY composer.json composer.json
