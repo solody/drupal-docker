@@ -10,6 +10,3 @@ RUN chmod 0777 "./install-composer.sh"
 RUN "./install-composer.sh"
 
 COPY composer.json composer.json
-
-RUN pwd
-RUN composer update
