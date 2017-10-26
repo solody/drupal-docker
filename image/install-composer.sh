@@ -16,4 +16,4 @@ RESULT=$?
 rm composer-setup.php
 exit $RESULT
 
-mv composer.phar /usr/local/bin/composer
+mv ./composer.phar /usr/local/bin/composer

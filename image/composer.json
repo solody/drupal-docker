@@ -61,6 +61,10 @@
     "repositories": [
         {
             "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        },
+        {
+            "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
     ]
