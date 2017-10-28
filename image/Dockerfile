@@ -9,6 +9,7 @@ COPY install-composer.sh install-composer.sh
 RUN chmod 0777 "./install-composer.sh"
 RUN "./install-composer.sh"
 
-COPY composer.json composer.json
 
 RUN php composer.phar update
+
+COPY composer.json composer.json
